@@ -27,6 +27,18 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		
+		<!-- Através deste link: https://stackoverflow.com/questions/17484764/java-lang-classnotfoundexception-com-mysql-jdbc-driver-in-eclipse 
+			Encontrei a referência para este link: https://mvnrepository.com/artifact/mysql/mysql-connector-java
+			Onde encontrei o driver para conexão com o mysql mais atualizado.
+			Onde faz a conexão com o JDBC não se faz necessário o uso do Class.forName()
+		-->
+		<dependency>
+		    <groupId>mysql</groupId>
+		    <artifactId>mysql-connector-java</artifactId>
+		    <version>8.0.33</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
