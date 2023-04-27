@@ -3,12 +3,14 @@ package com.pure.desafio.jdbc.connection;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import org.springframework.stereotype.Component;
 
 /**
  * para criar a conexão usei essa referência:
  * https://www.devmedia.com.br/java-crie-uma-conexao-com-banco-de-dados/5698
  */
 
+@Component
 public class JDBCConnection {
   private Connection connection;
   String username = null;
@@ -41,5 +43,7 @@ public class JDBCConnection {
       e.printStackTrace();
     }
   }
+
+
 
 }
